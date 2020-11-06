@@ -1,191 +1,159 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="zxx">
+   <head>
+      <meta charset="utf-8" />
+      <meta http-equiv="x-ua-compatible" content="ie=edge" />
+      <title>RIOFIT MEALS</title>
+      <meta name="description" content="" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-   <meta charset="utf-8">
-   <meta http-equiv="x-ua-compatible" content="ie=edge">
-   <title>Rio Fit Meals</title>
-   <meta name="description" content="">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="manifest" href="site.webmanifest" />
+      <link rel="shortcut icon" type="image/x-icon" href="img/logo/logo.png" />
+      <!-- Place favicon.png in the root directory -->
 
-   <link rel="manifest" href="site.webmanifest">
-   <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
-   <!-- Place favicon.png in the root directory -->
+      <!-- CSS here -->
+      <link rel="stylesheet" href="css/bootstrap.min.css" />
+      <link rel="stylesheet" href="css/owl.carousel.min.css" />
+      <link rel="stylesheet" href="css/animate.min.css" />
+      <link rel="stylesheet" href="css/magnific-popup.css" />
+      <link rel="stylesheet" href="css/meanmenu.css" />
+      <link rel="stylesheet" href="css/flaticon.css" />
+      <link rel="stylesheet" href="css/fontawesome-all.min.css" />
+      <link rel="stylesheet" href="css/slick.css" />
+      <link rel="stylesheet" href="css/dripicons.css" />
+      <link rel="stylesheet" href="css/themify-icons.css" />
+      <link rel="stylesheet" href="css/default.css" />
+      <link rel="stylesheet" href="css/style.css" />
+      <link rel="stylesheet" href="css/responsive.css" />
+   </head>
 
-   <!-- CSS here -->
-   <link rel="stylesheet" href="css/bootstrap.min.css">
-   <link rel="stylesheet" href="css/owl.carousel.min.css">
-   <link rel="stylesheet" href="css/animate.min.css">
-   <link rel="stylesheet" href="css/magnific-popup.css">
-   <link rel="stylesheet" href="css/meanmenu.css">
-   <link rel="stylesheet" href="css/flaticon.css">
-   <link rel="stylesheet" href="css/fontawesome-all.min.css">
-   <link rel="stylesheet" href="css/slick.css">
-   <link rel="stylesheet" href="css/dripicons.css">
-   <link rel="stylesheet" href="css/themify-icons.css">
-   <link rel="stylesheet" href="css/default.css">
-   <link rel="stylesheet" href="css/style.css">
-   <link rel="stylesheet" href="css/responsive.css">
-</head>
+   <body>
+      <!-- header-start -->
+      <header class="header-transparent">
+         <div id="sticky-header" class="main-menu-area">
+            <div class="container">
+               <div class="row align-items-center">
+                  <div class="col-xl-2 col-lg-2 col-md-4 col-6">
+                     <div class="logo">
+                        <a href="/">
+                           <img
+                              class="standard-logo logo"
+                              src="img/logo/logo.png"
+                              width="120px"
+                              alt="RIOFIT MEALS"
+                           />
+                           <img
+                              class="retina-logo logo"
+                              src="img/logo/logo.png"
+                              width="120px"
+                              alt="RIOFIT MEALS"
+                           />
+                        </a>
+                     </div>
+                  </div>
+                  <div class="col-xl-10 col-lg-10 col-md-8 col-6">
+                     <!-- <div class="header-right f-right">
+                        <ul>
+                           <li class="active info-bar">
+                              <a href="#"><i class="dripicons-vibrate"></i></a>
+                           </li>
+                        </ul>
+                     </div> -->
+                     <div class="main-menu text-right f-right">
+                        <nav id="mobile-menu">
+                           <ul>
+                              <li>
+                                 <a class="active" href="index.html">Home </a>
+                              </li>
+                              <li><a href="about.html">About Us</a></li>
+                              <!-- <li><a href="contact.html">Contact</a></li> -->
+                              <!-- <li><a href="faqs-2.html">FAQ's</a></li> -->
+                              <li>
+                                 <a
+                                    href="https://riofitmeals.dailykit.org/store"
+                                    target="_blank"
+                                    rel="norefferer noopener"
+                                    class="order-now-button"
+                                    ><strong class="text1">Order Now</strong></a
+                                 >
+                              </li>
+                           </ul>
+                        </nav>
+                     </div>
+                  </div>
+                  <div class="col-12">
+                     <div class="mobile-menu"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <!-- header-end -->
 
-<body>
+      <section class="banner-home">
+         <div class="video-container" style="">
+            <video
+               autoplay
+               loop
+               id="video_background"
+               poster="{{ module.background_videos.banner_video_poster.src }}"
+               muted
+               plays-inline
+               class="fillWidth"
+            >
+               <source
+                  src="img/bg/ezgif.com-gif-maker (6).mp4"
+                  type="video/mp4"
+               />
+               Your browser does not support the video tag. I suggest you
+               upgrade your browser.
+               <source
+                  src="{{ module.background_videos.webm_video_file }}"
+                  type="video/webm"
+               />
+               Your browser does not support the video tag. I suggest you
+               upgrade your browser.
+            </video>
+            <div class="banner-head text-center">
+               <div class="header">
+                  <h1 data-animation="fadeInUp" data-delay=".6s">Rio Fit Meals for Real Fit Folks</h1>
+                  <h2 data-animation="fadeInUp" data-delay=".6s" style="color: #fff">
+                     <blockquote>Delivered to your Doorstep!</blockquote>
+                  </h2>
+                
+                  <div class="all-text col-lg-12">
+                     <div id="p1" class="active"></div>
+                  </div>
+                  <a
+                     href="/subscription"
+                     target="_blank"
+                     class="theme-btn btn-style-five"
+                     ><span class="txt">Weekly Meal Plan</span></a
+                  >
+                  <a
+                  href="/store"
+                  target="_blank"
+                  class="theme-btn btn-style-five"
+                  ><span class="txt">Preset Meals</span></a
+               >
 
-
-
-   <!-- header-start -->
-   <header class="header-transparent">
-      <div class="header-area d-none d-md-block">
-         <div class="container">
-            <div class="row">
-               <div class="col-xl-7 col-lg-7 col-md-9">
-                  <div class="header-wrapper">
-                     <div class="header-text">
-                        <span> <i class="far fa-map"></i> 23, Sacks Boulevard, Leominster, Massachussets, USA</span>
-                        <span> <i class="far fa-envelope"></i> info@riofitmeals.com</span>
+                  <div class="offer">
+                     Enjoy Some Discount on your first order
+                  </div>
+               </div>
+               <div class="container-fluid">
+                  <div class="row">
+                     <div class="content-box col-md-12 text-center">
+                        <div></div>
                      </div>
                   </div>
                </div>
-               <div class="col-xl-5 col-lg-5 col-md-3">
-                  <div class="header-icon text-md-right">
-                     <a href="https://www.facebook.com/RioFitMeals/"  target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
-                     <a href="https://twitter.com/riofitmeals?lang=en"  target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
-                     <a href="https://www.instagram.com/riofitmeals/?hl=en"  target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
-                  </div>
-               </div>
             </div>
          </div>
-      </div>
-      <div id="sticky-header" class="main-menu-area">
-         <div class="container">
-            <div class="row align-items-center">
-               <div class="col-xl-2 col-lg-2 col-md-4 col-6">
-                  <div class="logo">
-                     <a href="index.html">
-                        <img class="standard-logo" src="img/logo/logo.png" alt="" />
-                        <img class="retina-logo" src="img/logo/logo.png" alt="" />
-                     </a>
-                  </div>
-               </div>
-               <div class="col-xl-10 col-lg-10 col-md-8 col-6">
-                  <div class="header-right f-right">
-                     <ul>
-                        <li class="active info-bar"><a href="#"><i class="dripicons-vibrate"></i></a></li>
-                     </ul>
-                  </div>
-                  <div class="main-menu text-right f-right">
-                     <nav id="mobile-menu">
-                        <ul>
-                           <li><a class="active" href="index.html">home </a>
-                              <!--<li><a href="shop.html">Shop </a></li>
-								 <li><a href="blog.html"> Blog</a></li>-->
-                           <li><a href="about.html">About Us</a></li>
-                           <li><a href="contact.html">Contact</a></li>
-                           <li><a href="faqs-1.html">FAQ's-1</a></li>
-                           <li><a href="faqs-2.html">FAQ's-2</a></li>
-                           <li><a href="faqs-3.html">FAQ's-3</a></li>
-                           <li><a href="https://riofitmeals.dailykit.org/store"><strong class="text1">Shop
-                                    Now</strong></a></li>
-                           <!-- <li><a href="https://dailykit-subscription.netlify.app/"><strong class="text2">Shop
-										  Subscription</strong></a></li> -->
-                        </ul>
-                     </nav>
-                  </div>
-               </div>
-               <div class="col-12">
-                  <div class="mobile-menu"></div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <div class="extra-info">
-         <div class="close-icon">
-            <button>
-               <i class="far fa-window-close"></i>
-            </button>
-         </div>
-         <div class="logo-side mb-30">
-            <a href="index.html">
-               <img src="img/logo/white.png" alt="" />
-            </a>
-         </div>
-         <div class="side-info mb-30">
-            <div class="contact-list mb-30">
-               <h4>Office Address</h4>
-               <p>23, Sacks Boulevard, Leominster, Massachussets, USA</p>
-            </div>
-            <div class="contact-list mb-30">
-               <h4>Phone Number</h4>
-               <p>(978) 466-1224</p>
+      </section>
 
-            </div>
-            <div class="contact-list mb-30">
-               <h4>Email Address</h4>
-               <p>info@riofitmeals.com</p>
-            </div>
-         </div>
-         <!--  <div class="instagram">
-				  <a href="#">
-					 <img src="img/gallery/gallery1.jpg" alt="">
-				  </a>
-				  <a href="#">
-					 <img src="img/gallery/gallery2.jpg" alt="">
-				  </a>
-				  <a href="#">
-					 <img src="img/gallery/gallery3.jpg" alt="">
-				  </a>
-				  <a href="#">
-					 <img src="img/gallery/gallery4.jpg" alt="">
-				  </a>
-				  <a href="#">
-					 <img src="img/gallery/gallery5.jpg" alt="">
-				  </a>
-				  <a href="#">
-					 <img src="img/gallery/gallery6.jpg" alt="">
-				  </a>
-			   </div> -->
-         <!--  <div class="social-icon-right mt-20">
-				  <a href="#">
-					 <i class="fab fa-facebook-f"></i>
-				  </a>
-				  <a href="#">
-					 <i class="fab fa-twitter"></i>
-				  </a>
-				  <a href="#">
-					 <i class="fab fa-google-plus-g"></i>
-				  </a>
-				  <a href="#">
-					 <i class="fab fa-instagram"></i>
-				  </a>
-			   </div> -->
-      </div>
-   </header>
    <!-- header-end -->
 
-   <!-- slider-start -->
-   <!-- <div class="slider-area">
-			<div class="slider-active"> -->
-   <div class="slider-height d-flex align-items-center" style="background-image:url(img/slider/slider1.jpg)">
-      <div class="container">
-         <div class="row">
-            <div class="col-xl-12 slider-content mt-65 text-center align-items-center">
-               <div class="slider-content mt-65 text-center">
-                  <h1 data-animation="fadeInUp" data-delay=".6s">Rio Fit Meals for Real Fit Folks</h1>
-                  <h2 data-animation="fadeInUp" data-delay=".6s">
-                     <blockquote>Delivered to your Doorstep!</blockquote>
-                  </h2>
-                  <div class="slider-button align-items-center">
-                     <a data-animation="fadeInLeft" data-delay=".8s" class="btn" target="__blank"
-                        rel="noopener noreferrer"
-                        href="https://riofitmeals.dailykit.org/subscription/get-started/select-plan">Weekly Meal
-                        Plan</a>
-                     <a data-animation="fadeInRight" rel="noopener noreferrer" data-delay="1s" class="btn active"
-                        href="https://riofitmeals.dailykit.org/store">Preset Meals</a>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
    <!-- </div>
 			</div> -->
    <!-- slider-start -->
@@ -198,8 +166,8 @@
             <!-- <div class="cta2-wrapper" style="background-image:url(img/bg/1.png)"> -->
             <div class="cta2-text text-center">
                <h1>Our Commitment-Free Plans</h1>
-               <p>We offer individual or weekly plan meals, that helps you save time and money, delivered right to
-                  your door. Treat
+               <p style="padding: 0px 20vw;">We offer individual or weekly plan meals, that helps you save time and money, delivered right to
+                  your door. <br>Treat
                   yourself to a gourmet meal daily. We deliver our meals on the day they are made (Mondays).</p>
             </div>
             <!-- </div> -->
@@ -230,8 +198,8 @@
                      <img src="img/icon/icon1.png" alt="" />
                   </div>
                   <div class="we-do-text">
-                     <h4>Choose Subscription or A-La-Carte</h4>
-                     <p>One time purchase or Weekly Meals, we’ve got it all for you</p>
+                     <h4>Choose How you want it?</h4>
+                     <p>One time purchase from A-La-Carte Menu or Weekly Meals from subscription plans, we’ve got it all for you</p>
                   </div>
                </div>
             </div>
@@ -268,332 +236,35 @@
       <div class="shape spahe2 bounce-animate"><img src="img/shape/shape2.png" alt=""></div>
       <div class="shape spahe3 bounce-animate"><img src="img/shape/shape3.png" alt=""></div>
       <div class="shape spahe4 bounce-animate"><img src="img/shape/shape4.png" alt=""></div>
-      <div class="container">
+      <div class="container" style="padding-bottom: 80px;">
          <div class="row">
             <div class="col-xl-6 col-lg-6 offset-lg-3 offset-xl-3">
                <div class="section-title text-center section-circle mb-70">
                   <div class="section-img">
                      <img src="img/shape/1.png" alt="" />
                   </div>
-                  <h1>Explore Our Product</h1>
+                  <h1>EXPLORE A-LA-CARTE MENU</h1>
                </div>
             </div>
          </div>
          <div class="row">
             <div class="col-xl-12">
-               <ul class="nav product-tab justify-content-center mb-75" id="myTab" role="tablist">
-                  <li class="nav-item">
-                     <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home">
-                        <div class="product-tab-content text-center">
-                           <div class="product-tab-img">
-                              <i class="flaticon-diet"></i>
-                           </div>
-                           <h4>Lunch</h4>
-                        </div>
-                     </a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile">
-                        <div class="product-tab-content text-center">
-                           <div class="product-tab-img">
-                              <i class="flaticon-tomato"></i>
-                           </div>
-                           <h4>Dinner</h4>
-                        </div>
-                     </a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact">
-                        <div class="product-tab-content text-center">
-                           <div class="product-tab-img">
-                              <i class="flaticon-pumpkin"></i>
-                           </div>
-                           <h4>Build Your Meal</h4>
-                        </div>
-                     </a>
-                  </li>
+               <ul
+                  id="categories__listing"
+                  class="nav product-tab justify-content-center mb-75"
+                  id="myTab"
+                  role="tablist"
+               >
+                  <h4 class="w-100 text-center">Loading categories...</h4>
                </ul>
 
-               <div class="tab-content" id="myTabContent">
-                  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                     <div class="row">
-                        <div class="col-xl-3 col-lg-3 col-md-6">
-                           <div class="product-wrapper text-center mb-30">
-                              <div class="product2-img">
-                                 <a href="#"><img src="img/product/product1.jpg" alt="" /></a>
-                                 <div class="product-action">
-                                    <a href="#"><i class="fas fa-shopping-cart"></i></a>
-                                 </div>
-                              </div>
-                              <div class="product-text product2-text">
-                                 <h4><a href="#">Classic Pancakes</a></h4>
-                                 <div class="pro-price">
-                                    <span>$49.99</span>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-3 col-md-6">
-                           <div class="product-wrapper text-center mb-30">
-                              <div class="product2-img">
-                                 <a href="#"><img src="img/product/product2.jpg" alt="" /></a>
-                                 <div class="product-action">
-                                    <a href="#"><i class="fas fa-shopping-cart"></i></a>
-                                 </div>
-                              </div>
-                              <div class="product-text product2-text">
-                                 <h4><a href="#">Oatmeal</a></h4>
-                                 <div class="pro-price">
-                                    <span>$29.99</span>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-3 col-md-6">
-                           <div class="product-wrapper text-center mb-30">
-                              <div class="product2-img">
-                                 <a href="#"><img src="img/product/product3.jpg" alt="" /></a>
-                                 <div class="product-action">
-                                    <a href="#"><i class="fas fa-shopping-cart"></i></a>
-                                 </div>
-                              </div>
-                              <div class="product-text product2-text">
-                                 <h4><a href="#">Rio Fit Salad</a></h4>
-                                 <div class="pro-price">
-                                    <span>$25.99</span>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-3 col-md-6">
-                           <div class="product-wrapper text-center mb-30">
-                              <div class="product2-img">
-                                 <a href="#"><img src="img/product/product4.jpg" alt="" /></a>
-                                 <div class="product-action">
-                                    <a href="#"><i class="fas fa-shopping-cart"></i></a>
-                                 </div>
-                              </div>
-                              <div class="product-text product2-text">
-                                 <h4><a href="#">Egg Wrap</a></h4>
-                                 <div class="pro-price">
-                                    <span>$49.99</span>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                     <div class="row">
-                        <div class="col-xl-3 col-lg-3 col-md-6">
-                           <div class="product-wrapper text-center mb-30">
-                              <div class="product2-img">
-                                 <a href="#"><img src="img/product/product1.jpg" alt="" /></a>
-                                 <div class="product-action">
-                                    <a href="#"><i class="fas fa-shopping-cart"></i></a>
-                                 </div>
-                              </div>
-                              <div class="product-text product2-text">
-                                 <h4><a href="#">Darling Oranges</a></h4>
-                                 <div class="pro-price">
-                                    <span>$49.99</span>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-3 col-md-6">
-                           <div class="product-wrapper text-center mb-30">
-                              <div class="product2-img">
-                                 <a href="#"><img src="img/product/product2.jpg" alt="" /></a>
-                                 <div class="product-action">
-                                    <a href="#"><i class="fas fa-shopping-cart"></i></a>
-                                 </div>
-                              </div>
-                              <div class="product-text product2-text">
-                                 <h4><a href="#">Fresh Apples</a></h4>
-                                 <div class="pro-price">
-                                    <span>$29.99</span>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-3 col-md-6">
-                           <div class="product-wrapper text-center mb-30">
-                              <div class="product2-img">
-                                 <a href="#"><img src="img/product/product3.jpg" alt="" /></a>
-                                 <div class="product-action">
-                                    <a href="#"><i class="fas fa-shopping-cart"></i></a>
-                                 </div>
-                              </div>
-                              <div class="product-text product2-text">
-                                 <h4><a href="#">Natural Broccoli</a></h4>
-                                 <div class="pro-price">
-                                    <span>$25.99</span>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-3 col-md-6">
-                           <div class="product-wrapper text-center mb-30">
-                              <div class="product2-img">
-                                 <a href="#"><img src="img/product/product4.jpg" alt="" /></a>
-                                 <div class="product-action">
-                                    <a href="#"><i class="fas fa-shopping-cart"></i></a>
-                                 </div>
-                              </div>
-                              <div class="product-text product2-text">
-                                 <h4><a href="#">Seasoned Tomatoes</a></h4>
-                                 <div class="pro-price">
-                                    <span>$49.99</span>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-                     <div class="row">
-                        <div class="col-xl-3 col-lg-3 col-md-6">
-                           <div class="product-wrapper text-center mb-30">
-                              <div class="product2-img">
-                                 <a href="#"><img src="img/product/product2.jpg" alt="" /></a>
-                                 <div class="product-action">
-                                    <a href="#"><i class="fas fa-shopping-cart"></i></a>
-                                 </div>
-                              </div>
-                              <div class="product-text product2-text">
-                                 <h4><a href="#">Darling Oranges</a></h4>
-                                 <div class="pro-price">
-                                    <span>$49.99</span>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-3 col-md-6">
-                           <div class="product-wrapper text-center mb-30">
-                              <div class="product2-img">
-                                 <a href="#"><img src="img/product/product1.jpg" alt="" /></a>
-                                 <div class="product-action">
-                                    <a href="#"><i class="fas fa-shopping-cart"></i></a>
-                                 </div>
-                              </div>
-                              <div class="product-text product2-text">
-                                 <h4><a href="#">Fresh Apples</a></h4>
-                                 <div class="pro-price">
-                                    <span>$29.99</span>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-3 col-md-6">
-                           <div class="product-wrapper text-center mb-30">
-                              <div class="product2-img">
-                                 <a href="#"><img src="img/product/product3.jpg" alt="" /></a>
-                                 <div class="product-action">
-                                    <a href="#"><i class="fas fa-shopping-cart"></i></a>
-                                 </div>
-                              </div>
-                              <div class="product-text product2-text">
-                                 <h4><a href="#">Natural Broccoli</a></h4>
-                                 <div class="pro-price">
-                                    <span>$25.99</span>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-3 col-md-6">
-                           <div class="product-wrapper text-center mb-30">
-                              <div class="product2-img">
-                                 <a href="#"><img src="img/product/product4.jpg" alt="" /></a>
-                                 <div class="product-action">
-                                    <a href="#"><i class="fas fa-shopping-cart"></i></a>
-                                 </div>
-                              </div>
-                              <div class="product-text product2-text">
-                                 <h4><a href="#">Seasoned Tomatoes</a></h4>
-                                 <div class="pro-price">
-                                    <span>$49.99</span>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="tab-pane fade" id="contact1" role="tabpanel" aria-labelledby="contact-tab">
-                     <div class="row">
-                        <div class="col-xl-3 col-lg-3 col-md-6">
-                           <div class="product-wrapper text-center mb-30">
-                              <div class="product2-img">
-                                 <a href="#"><img src="img/product/product1.jpg" alt="" /></a>
-                                 <div class="product-action">
-                                    <a href="#"><i class="fas fa-shopping-cart"></i></a>
-                                 </div>
-                              </div>
-                              <div class="product-text product2-text">
-                                 <h4><a href="#">Darling Oranges</a></h4>
-                                 <div class="pro-price">
-                                    <span>$49.99</span>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-3 col-md-6">
-                           <div class="product-wrapper text-center mb-30">
-                              <div class="product2-img">
-                                 <a href="#"><img src="img/product/product2.jpg" alt="" /></a>
-                                 <div class="product-action">
-                                    <a href="#"><i class="fas fa-shopping-cart"></i></a>
-                                 </div>
-                              </div>
-                              <div class="product-text product2-text">
-                                 <h4><a href="#">Fresh Apples</a></h4>
-                                 <div class="pro-price">
-                                    <span>$29.99</span>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-3 col-md-6">
-                           <div class="product-wrapper text-center mb-30">
-                              <div class="product2-img">
-                                 <a href="#"><img src="img/product/product4.jpg" alt="" /></a>
-                                 <div class="product-action">
-                                    <a href="#"><i class="fas fa-shopping-cart"></i></a>
-                                 </div>
-                              </div>
-                              <div class="product-text product2-text">
-                                 <h4><a href="#">Natural Broccoli</a></h4>
-                                 <div class="pro-price">
-                                    <span>$25.99</span>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-3 col-md-6">
-                           <div class="product-wrapper text-center mb-30">
-                              <div class="product2-img">
-                                 <a href="#"><img src="img/product/product3.jpg" alt="" /></a>
-                                 <div class="product-action">
-                                    <a href="#"><i class="fas fa-shopping-cart"></i></a>
-                                 </div>
-                              </div>
-                              <div class="product-text product2-text">
-                                 <h4><a href="#">Seasoned Tomatoes</a></h4>
-                                 <div class="pro-price">
-                                    <span>$49.99</span>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
+               <div class="tab-content" id="products__listing">
+                  <h5 class="w-100 text-center mb-3">Loading products...</h5>
                </div>
             </div>
          </div>
       </div>
-      <div class="col-xl-12 align-items-center text-center"><a class="btn"
-            href="https://riofitmeals.dailykit.org/store">View All Products</a></div>
-   </div>
+   
    <!-- product-area-end -->
 
    <!-- our-client-area-start -->
@@ -663,36 +334,31 @@
             </div>
          </div>
       </div>
+      <div class="container" style="padding: 40px 40px"> 
+    
+         <div class="col-md-6 col-sm-12" style="padding: 20px 90px">
+
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3D590577614690814%26id%3D100012157428504&show_text=true&width=552&appId=3781679238540513&height=213" width="552" height="213" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+         </div> 
+         <div class="col-md-6 col-sm-12 " style="padding: 20px 90px">
+      
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ferica.fournier.3%2Fposts%2F10221902978019576&show_text=true&width=552&appId=3781679238540513&height=156" width="552" height="156" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+         </div> 
+      
+         <div class="col-md-6 col-sm-12 " style="padding: 20px 90px">
+      
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FMarilynAnnH%2Fposts%2F3419231498107233&show_text=true&width=552&appId=3781679238540513&height=327" width="552" height="327" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+   
+   
+    
+
+   </div>
+</div>
+
    </div>
    <!-- our-client-area-end -->
 
-   <!-- choose-us-area-start -->
-   <!-- <div class="choose-us-area pt-120 pb-90" style="background-image:url(img/bg/bg8.jpg)">
-			<div class="container">
-				<div class="row">
-					<div class="col-xl-6 col-lg-6 col-md-6">
-						<div class="choose2-img mb-30">
-							<img src="img/choose/02.png" alt="" />
-						</div>
-					</div>
-					<div class="col-xl-6 col-lg-6 col-md-6">
-						<div class="single-choose mb-30">
-							<div class="choose-title">
-								<h1>About Us</h1>
-							</div>
-								<div class="choose2-text">
-									<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br/>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-								</div>
-							</div>
-							<div class="choose-button">
-								<a class="btn" href="about.html">Learn More</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div> -->
-   <!-- choose-us-area-end -->
+
 
    <!-- blog-area-start -->
    <div class="blog-area pt-110 pb-90" style="background-image:url(img/bg/blog-bg.png)">
@@ -704,23 +370,22 @@
                      <img src="img/shape/1.png" alt="" />
                   </div>
                   <h1>Media Coverage</h1>
-                  <p>Inspiration comes in all shapes and sizes. I just had to shoot these, cook something delicious.
                   </p>
                </div>
             </div>
          </div>
-         <div class="row">
+         <div class="row d-flex justify-content-center">
             <div class="col-xl-4 col-lg-4 col-md-12">
                <div class="blog-wrapper mb-30">
                   <div class="blog-img">
-                     <a href="blog-details.html"><img src="img/gallery/gallery1.png" alt="" /></a>
+                     <a href="https://www.telegram.com/news/20200126/culinary-talents-square-off-at-worcesters-best-chef" target="_blank"><img src="img/gallery/telegram-media.png" alt="" /></a>
                   </div>
                   <div class="blog-text">
-                     <h4><a href="blog-details.html">Couscous Summer Salad.</a></h4>
+                     <h4><a href="https://www.telegram.com/news/20200126/culinary-talents-square-off-at-worcesters-best-chef">Culinary talents square off at Worcester’s Best Chef</a></h4>
                      <div class="blog-meta">
-                        <span><i class="dripicons-user"></i>Food Now</span>
-                        <span><i class="dripicons-calendar"></i>30 Dec 2018</span>
-                        <span><i class="dripicons-conversation"></i>(02)</span>
+                        <span><i class="dripicons-user"></i>Telegram</span>
+                        <span><i class="dripicons-calendar"></i>20 June 2020</span>
+                        <span><i class="dripicons-conversation"></i>(01)</span>
                      </div>
                   </div>
                </div>
@@ -728,33 +393,19 @@
             <div class="col-xl-4 col-lg-4 col-md-12">
                <div class="blog-wrapper mb-30">
                   <div class="blog-img">
-                     <a href="blog-details.html"><img src="img/gallery/gallery2.png" alt="" /></a>
+                     <a href="blog-details.html"><img src="img/gallery/IMG_3286.JPG" alt="" /></a>
                   </div>
                   <div class="blog-text">
-                     <h4><a href="blog-details.html">Start the day with Fresh Fruits and Waffles.</a></h4>
+                     <h4><a href="blog-details.html">Souza Nominated For Immigrant Entrepreneur Award</a></h4>
                      <div class="blog-meta">
-                        <span><i class="dripicons-user"></i>California Times</span>
-                        <span><i class="dripicons-calendar"></i>30 Dec 2018</span>
+                        <span><i class="dripicons-user"></i>Sentinel & Enterprises</span>
+                        <span><i class="dripicons-calendar"></i>28 March 2018</span>
                         <span><i class="dripicons-conversation"></i>(02)</span>
                      </div>
                   </div>
                </div>
             </div>
-            <div class="col-xl-4 col-lg-4 col-md-12">
-               <div class="blog-wrapper mb-30">
-                  <div class="blog-img">
-                     <a href="blog-details.html"><img src="img/gallery/gallery6.png" alt="" /></a>
-                  </div>
-                  <div class="blog-text">
-                     <h4><a href="blog-details.html">Garlic Basil Chicken with Tomato Butter Sauce.</a></h4>
-                     <div class="blog-meta">
-                        <span><i class="dripicons-user"></i>Yelp Best</span>
-                        <span><i class="dripicons-calendar"></i>30 Dec 2018</span>
-                        <span><i class="dripicons-conversation"></i>(02)</span>
-                     </div>
-                  </div>
-               </div>
-            </div>
+    
          </div>
       </div>
    </div>
@@ -762,7 +413,7 @@
 
 
    <!-- faq-area-start -->
-   <div class="faq-area gray2-bg pt-105 pb-100">
+   <!-- <div class="faq-area gray2-bg pt-105 pb-100">
       <div class="faq-img d-none d-md-block" style="background-image:url(img/bg/bg13.jpg)"></div>
       <div class="container-fluid">
          <div class="row">
@@ -834,16 +485,22 @@
             </div>
          </div>
       </div>
-   </div>
+   </div> -->
    <!-- faq-area-end -->
+
+   <div
+   id="instagram-feed1"
+   class="instagram_feed"
+   style="padding: 10px 40px"
+></div>
 
 
    <!-- footer-area-start -->
    <div class="footer-area pt-80" style="background-image:url(img/bg/bg6.jpg)">
       <div class="container">
          <div class="footer-bg pb-50">
-            <div class="row">
-               <div class="col-xl-3 col-lg-3 col-md-6">
+            <div class="row d-flex justify-content-center">
+               <div class="col-xl-6 col-lg-6 col-md-6">
                   <div class="footer-wrapper mb-30">
                      <div class="footer-logo">
                         <a href="index.html"><img src="img/logo/white.png" alt="" /></a>
@@ -861,23 +518,23 @@
                      </div>
                   </div>
                </div>
-               <div class="col-xl-3 col-lg-3 col-md-6">
+               <!-- <div class="col-xl-3 col-lg-3 col-md-6">
                   <div class="footer-wrapper pl-45 mb-30">
                      <div class="footer-title">
                         <h4>Customer Support</h4>
                         <img src="img/shape/f.png" alt="" />
                      </div>
                      <ul class="fotter-menu">
-                        <!--<li><a href="#">Help and Ordering</a></li>-->
+                        <li><a href="#">Help and Ordering</a></li>
                         <li><a href="#">Privacy Policy</a></li>
-                        <!--<li><a href="#">Return & Cancellation</a></li>
+                        <li><a href="#">Return & Cancellation</a></li>
 						  <li><a href="#">Delevery Schedule</a></li>
 						  <li><a href="#">Get a Call</a></li>
-						  <li><a href="#">Online Enquiry</a></li>-->
+						  <li><a href="#">Online Enquiry</a></li>
                      </ul>
                   </div>
-               </div>
-               <div class="col-xl-3 col-lg-3 col-md-6">
+               </div> -->
+               <div class="col-xl-6 col-lg-6 col-md-6">
                   <div class="footer-wrapper pl-45 mb-30">
                      <div class="footer-title">
                         <h4>Contact Info</h4>
@@ -892,24 +549,7 @@
                      </ul>
                   </div>
                </div>
-               <!-- <div class="col-xl-3 col-lg-3 col-md-6">
-					<div class="footer-wrapper pl-40 mb-30">
-					   <div class="footer-title">
-						  <h4>Newsletters</h4>
-						  <img src="img/shape/f.png" alt="" />
-					   </div>
-					   <div class="footer-content">
-						  <p>Enter your email and we’ll send you latest information plans.</p>
-					   </div>
-					   <div class="subscribes-form">
-						  <form action="#">
-							 <input placeholder="Enter your emaill " type="email">
-							 <button class="btn">Subscribe</button>
-						  </form>
-					   </div>
-					</div>
-				 </div>
-			  </div> -->
+              
             </div>
             <div class="footer-bottom-area">
                <div class="row">
@@ -923,84 +563,67 @@
             </div>
          </div>
       </div>
-      <!-- footer-area-end -->
-
-      <!-- footer-area-start -->
-      <!-- <div class="footer-area pt-100 pb-65">
-			<div class="container">
-				<div class="row">
-					<div class="col-xl-3 col-lg-3 col-md-6">
-						<div class="footer-wrapper single-footer mb-30">
-							<div class="footer-logo">
-								<a href="index.html"><img src="img/logo/logo.png" alt="" /></a>
-							</div>
-							<div class="footer-text">
-								<p>Lorem ipsum dolor amet cons adipisicing elit sed do eiusmod tempor incidie.</p>
-							</div>
-							<ul class="fotter-link">
-								<li><i class="far fa-paper-plane"></i>205 Olazu Familia, Herba <br> Street Front USA</li>
-								<li><i class="far fa-envelope-open"></i> info@riofitmeals.com</li>
-								<li><i class="fas fa-headphones"></i>(978) 466-1224</li>
-							</ul>
-
-						</div>
-					</div>
-					<div class="col-xl-3 col-lg-3 col-md-6">
-						<div class="footer-wrapper single-footer pl-45 mb-30">
-							<div class="footer-title">
-								 <h4><br/><br/><br/><br/></h4>
-								<img src="img/shape/f2.png" alt="" />
-							</div>
-							<ul class="fotter-menu">
-							<li><a href="#">FAQs</a></li>
-								<li><a href="#">Contact Us</a></li>
-								<li><a href="#">About Us</a></li>
-								<li><a href="#">Privacy Policy</a></li>
-								<li><a href="#">Terms</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="footer-bottom-area footer-bottom">
-			<div class="container">
-				<div class="row">
-					<div class="col-xl-6 col-lg-6 col-md-6">
-						<div class="copyright">
-							<p>Copyright <i class="far fa-copyright"></i> 2020 <a href="#">BDevs</a>. All Rights Reserved</p>
-						</div>
-					</div>
-					<div class="col-xl-6 col-lg-6 col-md-6">
-						<div class="footer-icon text-md-right">
-						   <a href="#"><i class="fab fa-facebook-f"></i></a>
-						   <a href="#"><i class="fab fa-twitter"></i></a>
-						   <a href="#"><i class="fab fa-linkedin"></i></a>
-						   <a href="#"><i class="fab fa-youtube"></i></a>
-					   </div>
-					</div>
-				</div>
-			</div>
-		</div>  -->
-      <!-- footer-area-end -->
-
-
-
-      <!-- Modal Search -->
-      <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-hidden="true">
-         <div class="modal-dialog" role="document">
-            <div class="modal-content">
-               <form>
-                  <input type="text" placeholder="Search here...">
-                  <button>
-                     <i class="fa fa-search"></i>
-                  </button>
-               </form>
-            </div>
-         </div>
       </div>
-   </div>
+      <!-- footer-area-end -->
+
+
+
+      <script src="js/InstagramFeed.min.js"></script>
+      <script>
+         ;(function () {
+            new InstagramFeed({
+               username: 'riofitmeals',
+               container: document.getElementById('instagram-feed1'),
+               display_profile: true,
+               display_biography: true,
+               display_gallery: true,
+               display_captions: true,
+               callback: null,
+               styling: true,
+               items: 12,
+               items_per_row: 3,
+               margin: 1,
+               lazy_load: true,
+               on_error: console.error,
+               image_size: 640,
+            })
+         })()
+         ;(function ($) {
+            // Show back to top button if distance from top > 0
+            $(window).scroll(function () {
+               var viewportTop = $(window).scrollTop() + $(window).height()
+
+               if ($(window).scrollTop() > 10) {
+                  $('#btn-top').addClass('d-block')
+                  $('#btn-top').removeClass('d-none')
+               } else {
+                  $('#btn-top').addClass('d-none')
+                  $('#btn-top').removeClass('d-block')
+               }
+            })
+         })(jQuery)
+      </script>
+
+
+
+   <script>
+      let text = [
+         'Delivered Right to your doorstep',
+         'Fitness Friendly',
+         'Easy Subscription Service',
+      ]
+      let textLength = text.length
+      let index = 0
+
+      let stop = setInterval(() => {
+         if (index === 0 || index < textLength) {
+            document.getElementById('p1').innerHTML = text[index]
+            index++
+         } else {
+            index = 0
+         }
+      }, 2000)
+   </script>
 
 
    <!-- JS here -->
@@ -1022,6 +645,7 @@
    <script src="js/jquery.magnific-popup.min.js"></script>
    <script src="js/plugins.js"></script>
    <script src="js/main.js"></script>
+   <script src="js/products.js"></script>
 </body>
 
 </html>
