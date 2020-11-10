@@ -306,7 +306,7 @@ label {
    top: 0;
    left: 0;
    right: 0;
-   z-index: 9;
+   z-index: 10000;
    transition: 0.4s;
    background-color: #fff;
 }
@@ -3671,7 +3671,9 @@ label {
       margin-right: 10px;
    }
 }
-
+.owl-carousel {
+   padding: 20px 40px;
+}
 .news-meta span a {
    color: #89bf64;
    letter-spacing: 2px;
@@ -4840,6 +4842,60 @@ ul.cat li a:hover {
    color: #fefdfc;
 }
 
+.btn-style-six {
+   position: relative;
+   display: inline-block;
+   font-size: 24px;
+   line-height: 30px;
+   color: #fff;
+   padding: 12px 36px;
+   font-weight: 700;
+   overflow: hidden;
+   border-radius: 5px;
+   overflow: hidden;
+   background-color: #89bf64;
+   text-transform: capitalize;
+}
+
+.btn-style-six:before {
+   position: absolute;
+   content: '';
+   top: -2px;
+   left: -2px;
+   right: -2px;
+   bottom: -2px;
+   z-index: 1;
+   opacity: 0;
+   background-color: #fff;
+   -webkit-transition: all 0.4s;
+   -moz-transition: all 0.4s;
+   -o-transition: all 0.4s;
+   transition: all 0.4s;
+   -webkit-transform: scale(0.2, 1);
+   transform: scale(0.2, 1);
+}
+
+.btn-style-six .txt {
+   position: relative;
+   z-index: 1;
+}
+
+.btn-style-six i {
+   position: relative;
+   font-weight: 300;
+   margin-right: 10px;
+}
+
+.btn-style-six:hover::before {
+   opacity: 1;
+   -webkit-transform: scale(1, 1);
+   transform: scale(1, 1);
+}
+
+.btn-style-six:hover {
+   color: #89bf64;
+}
+
 /***************************************Responsive Styles******************************************/
 /**************iPad Landscape***************/
 @media only screen and (max-width: 1024px) and (min-width: 986px) {
@@ -4890,6 +4946,10 @@ ul.cat li a:hover {
       object-fit: cover;
    }
    .btn-style-five {
+      font-size: 18px;
+   }
+
+   .btn-style-six {
       font-size: 18px;
    }
 
