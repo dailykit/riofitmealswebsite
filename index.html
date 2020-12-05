@@ -28,6 +28,13 @@
    </head>
 
    <body>
+      <div id="loading">
+         <img
+            id="loading-image"
+            src="img/riofitmeals-loading.gif"
+            alt="Loading..."
+         />
+      </div>
       <!-- header-start -->
       <header class="header-transparent">
          <div id="sticky-header" class="main-menu-area">
@@ -66,8 +73,11 @@
                                  <a class="active" href="index.html">Home </a>
                               </li>
                               <li><a href="about.html">About Us</a></li>
-                              <!-- <li><a href="contact.html">Contact</a></li> -->
-                              <!-- <li><a href="faqs-2.html">FAQ's</a></li> -->
+           
+                              <li><a href="faq.html">FAQ's</a></li>
+                              <li><a href="contact.html">Contact</a></li>
+
+
                               <li>
                                  <a
                                     href="https://riofitmeals.dailykit.org/store"
@@ -89,75 +99,68 @@
          </div>
       </header>
       <!-- header-end -->
-
-      <section class="banner-home">
-         <div class="video-container" style="">
-            <video
-               autoplay
-               loop
-               id="video_background"
-               poster="{{ module.background_videos.banner_video_poster.src }}"
-               muted
-               plays-inline
-               class="fillWidth"
+      <div class="banner-head text-center" style="min-height: 100vh; padding: 10vh 10vw; background-color: #000;">
+         <div class="header">
+       
+            <h1 data-animation="fadeInUp" data-delay=".6s">Rio Fit Meals for Real Fit Folks</h1>
+            <div class="all-text col-lg-12">
+               <div id="p1" class="active">No Preservatives & GMOs</div>
+            </div>
+            <h3 data-animation="fadeInUp" data-delay=".6s" style="color: #fff">
+               <blockquote>Delivered to your Doorstep! Heated & Served in Minutes.</blockquote>
+            </h3>
+            <!-- <h2 data-animation="fadeInUp" data-delay=".6s" style="color: #fff">
+               <blockquote>3 Ways to Order Your Meals</blockquote>
+            </h2> -->
+            <div class="offer" style="color: #fff;">
+               3 Ways to Order Your Meals
+            </div>
+          
+        
+            <a
+            href="https://riofitmeals.dailykit.org/store/ProductPage?id=2&type=comboProduct"
+            target="_blank"
+            class="theme-btn btn-style-five"
+            ><span class="txt">Build Your Own Meal</span></a
+         >
+            <a
+               href="/subscription/get-started/select-plan"
+               target="_blank"
+               class="theme-btn btn-style-six"
+               ><span class="txt">Weekly Meal Plan</span></a
             >
-               <source
-                  src="img/bg/ezgif.com-gif-maker (6).mp4"
-                  type="video/mp4"
-               />
-               Your browser does not support the video tag. I suggest you
-               upgrade your browser.
-               <source
-                  src="{{ module.background_videos.webm_video_file }}"
-                  type="video/webm"
-               />
-               Your browser does not support the video tag. I suggest you
-               upgrade your browser.
-            </video>
-            <div class="banner-head text-center">
-               <div class="header">
-                  <h1 data-animation="fadeInUp" data-delay=".6s">Rio Fit Meals for Real Fit Folks</h1>
-                  <h2 data-animation="fadeInUp" data-delay=".6s" style="color: #fff">
-                     <blockquote>Delivered to your Doorstep!</blockquote>
-                  </h2>
-                
-                  <div class="all-text col-lg-12">
-                     <div id="p1" class="active"></div>
-                  </div>
-                  <a
-                  href="https://riofitmeals.dailykit.org/store/ProductPage?id=2&type=comboProduct"
-                  target="_blank"
-                  class="theme-btn btn-style-five"
-                  ><span class="txt">Build Your Own Meal</span></a
-               >
-                  <a
-                     href="/subscription"
-                     target="_blank"
-                     class="theme-btn btn-style-six"
-                     ><span class="txt">Weekly Meal Plan</span></a
-                  >
-                  <a
-                  href="https://riofitmeals.dailykit.org/store/CategoryProductsPage?category=Most%20Ordered%20Meals"
-                  target="_blank"
-                  class="theme-btn btn-style-five"
-                  ><span class="txt">Most Ordered Meals</span></a
-               >
-         
+            <a
+            href="https://riofitmeals.dailykit.org/store/CategoryProductsPage?category=Most%20Ordered%20Meals"
+            target="_blank"
+            class="theme-btn btn-style-five"
+            ><span class="txt">Preset Meals</span></a
+         >
+   
 
-                  <div class="offer">
-                     Enjoy Some Discount on your first order
-                  </div>
+            <div class="offer">
+            Order More than 20 Meals and Get Meals For as Low as $7.75
+            </div>
+
+
+            <div class="banner-description">
+               Rio Fit Meals are flavorful, healthy, well-balanced meals delivered to your door and ready to eat in minutes. The
+               special chef-inspired sous-vide method vacuum seals the flavor to keep it tasting the way the chef intended.
                </div>
-               <div class="container-fluid">
-                  <div class="row">
-                     <div class="content-box col-md-12 text-center">
-                        <div></div>
-                     </div>
-                  </div>
+         </div>
+         <div class="container-fluid">
+            <div class="row">
+               <div class="content-box col-md-12 text-center">
+                  <div></div>
                </div>
             </div>
          </div>
-      </section>
+      </div>
+      <!-- <section class="banner-home">
+         <div class="video-container" style="">
+      
+          
+         </div>
+      </section> -->
 
    <!-- header-end -->
 
@@ -172,7 +175,7 @@
          <div class="col-xl-12">
             <!-- <div class="cta2-wrapper" style="background-image:url(img/bg/1.png)"> -->
             <div class="cta2-text text-center">
-               <h1>Our Commitment-Free Plans</h1>
+               <h1>Pick Your Commitment-Free Plans</h1>
                <p style="padding: 0px 20vw;">We offer individual or weekly plan meals, that helps you save time and money, delivered right to
                   your door. <br>Treat
                   yourself to a gourmet meal daily. We deliver our meals on the day they are made (Mondays).</p>
@@ -498,9 +501,9 @@
 
    <script>
       let text = [
-         'Delivered Right to your doorstep',
-         'Fitness Friendly',
-         'Easy Subscription Service',
+         'Healthy & Fresh',
+         'No Preservatives or GMOs',
+         'Saves you time & money',
       ]
       let textLength = text.length
       let index = 0
@@ -523,6 +526,11 @@
    <script src="js/waypoints.min.js"></script>
    <script src="js/jquery.counterup.min.js"></script>
    <script src="js/jquery.countdown.min.js"></script>
+   <script>
+      $(window).load(function () {
+         $('#loading').hide()
+      })
+   </script>
    <script src="js/bootstrap.min.js"></script>
    <script src="js/owl.carousel.min.js"></script>
    <script src="js/isotope.pkgd.min.js"></script>

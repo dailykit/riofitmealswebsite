@@ -41,6 +41,33 @@ body {
    font-style: normal;
 }
 
+#loading {
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   position: fixed;
+   display: block;
+   background-color: #fff;
+   z-index: 1000000099;
+   text-align: center;
+   overflow: hidden;
+}
+
+#loading-image {
+   /* position: relative;
+   top: 50vh;
+   left: 50vw;
+   z-index: 100000000000; */
+   margin: auto;
+   position: absolute;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   width: 50vw;
+}
+
 .img {
    max-width: 100%;
    transition: all 0.3s ease-out 0s;
@@ -105,7 +132,7 @@ h5,
 h6 {
    font-family: 'Roboto', sans-serif;
    font-weight: normal;
-   color: #112433;
+   color: #89bf64;
    margin-top: 0px;
    font-style: normal;
    font-weight: 400;
@@ -224,6 +251,13 @@ label {
    box-shadow: 10px 10px 5px -5px rgba(0, 0, 0, 0.75);
    color: #fff;
    padding: 20px;
+}
+
+.banner-head {
+   min-height: 100vh;
+   padding: 10vh 10vw;
+   background-color: #000;
+   background-image: url('');
 }
 
 .order-now-button .text1 {
@@ -2809,8 +2843,8 @@ label {
    margin-bottom: 40px;
 }
 .question-collapse {
-   padding-left: 105px;
-   padding-right: 105px;
+   padding-left: 200px;
+   padding-right: 200px;
 }
 .question-collapse .card {
    border-radius: 0;
@@ -2818,6 +2852,7 @@ label {
    border-bottom: 0;
    border: none;
    background: #fff;
+   width: 1080px;
 }
 .question-collapse .card-body {
    padding: 0 54px 17px 40px;
@@ -4707,13 +4742,13 @@ ul.cat li a:hover {
    width: 100%;
    height: 100%;
    top: 0;
-   padding-top: 20vh;
+   padding-top: 0vh;
 }
 .banner-home .video-container {
    position: relative;
    bottom: 0%;
    left: 0%;
-   height: 100vh;
+   min-height: calc(100vh + 50px);
    width: 100%;
    overflow: hidden;
 }
@@ -4732,7 +4767,7 @@ ul.cat li a:hover {
 }
 .banner-home .video-container video.fillWidth {
    width: 100% !important;
-   height: auto !important;
+   min-height: calc(100vh + 50px) !important;
 }
 
 .banner-home .banner-head .container-fluid {
@@ -4925,14 +4960,26 @@ ul.cat li a:hover {
    }
 }
 
+.banner-description {
+   padding: 30px 100px 30px;
+   font-weight: 500;
+   font-size: 20px;
+}
+
 /*******************************************/
 /***************iPhone Portrait**************/
 @media only screen and (max-width: 479px) and (min-width: 320px) {
    .header {
-      padding-top: 40vh;
+      padding-top: 20vh;
    }
    .how-do-we-work {
       padding: unset;
+   }
+
+   .banner-description {
+      padding: unset;
+      font-weight: 500;
+      font-size: 16px;
    }
 
    .banner-home .video-container {
@@ -4955,11 +5002,12 @@ ul.cat li a:hover {
 
    .banner-home h1 {
       font-size: 36px;
+      padding: 0px 20px;
    }
    .banner-home .banner-head {
       padding: 0px 10px;
    }
    .all-text {
-      font-size: 16px;
+      font-size: 24px;
    }
 }
